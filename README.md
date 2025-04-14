@@ -40,7 +40,7 @@ This gives more weight to followers while still considering the number of public
 ## 🧪 How to Run
 
 1. **Clone this repo:**
-   git clone https://github.com/your-username/github-user-ranking.git
+   git clone https://github.com/gideonwacal/github-user-ranking.git
 Install Python packages:
 
 pip install pandas requests mysql-connector-python
