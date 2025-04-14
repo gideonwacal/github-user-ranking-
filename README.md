@@ -15,26 +15,17 @@ This project uses the GitHub API to extract user data, store it in a MySQL data 
 
 ## 📊 Ranking Logic
 
-The rank score is calculated using the following formula:
-
-rank_score = (followers * 2) + public_repos
-
-yaml
-Copy
-Edit
-
+The rank score is calculated using the following formula: ---rank_score = (followers * 2) + public_repos---
 This gives more weight to followers while still considering the number of public repositories.
 
----
 
 ## 🛠️ Technologies Used
 
-- **Python** – For data extraction from GitHub API
-- **MySQL** – As the data warehouse for storing and analyzing user data
-- **Pandas** – For handling and exporting data
-- **GitHub API** – To fetch real-time public user stats
+- Python – For data extraction from GitHub API
+- MySQL – As the data warehouse for storing and analyzing user data
+- Pandas – For handling and exporting data
+- GitHub API – To fetch real-time public user stats
 
----
 
 ## 📂 Files in This Repository
 
@@ -45,7 +36,6 @@ This gives more weight to followers while still considering the number of public
 | `database_schema.sql`    | SQL script to create MySQL tables               |                   |
 | `report.pdf`             | Final report explaining the project             |
 
----
 
 ## 🧪 How to Run
 
@@ -53,16 +43,8 @@ This gives more weight to followers while still considering the number of public
    git clone https://github.com/your-username/github-user-ranking.git
 Install Python packages:
 
-bash
-Copy
-Edit
 pip install pandas requests mysql-connector-python
-Add your GitHub token in extract_github_users.py:
-
-python
-Copy
-Edit
-headers = {'Authorization': 'token YOUR_GITHUB_TOKEN'}
+Add your GitHub token in extract_github_users.py: headers = {'Authorization': 'token YOUR_GITHUB_TOKEN'}
 Run the script:
 
 bash
